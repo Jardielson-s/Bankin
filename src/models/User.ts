@@ -31,6 +31,8 @@ const UserSchema = new mongoose.Schema({
     bio: {
         type: String,
     },
+}, {
+    timestamps: true
 })
 
 const UserModel = mongoose.model('User', UserSchema)

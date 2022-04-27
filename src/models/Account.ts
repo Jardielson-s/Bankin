@@ -15,6 +15,8 @@ const AccountSchema = new mongoose.Schema({
         required: true,
         default: 0.0
     }
+}, {
+    timestamps: true
 })
 
 const AccountModel = mongoose.model('Account', AccountSchema)
